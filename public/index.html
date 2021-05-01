@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript MediaPlayer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../src/assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="../src/styles/main.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main" id="top-nav">
+            <a href="#home">Logo</a>
+            <a href="#news">SUBSCRIPTIONS</a>
+            <a href="#contact">TRENDING</a>
+            <a href="#about" id="secondReference">MY LIBRARY</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="search__container">
+                <input class="search__input" type="text" placeholder="Search">
+            </div>
+            <div class="my-balance">
+                <div>
+                    <a href="/">My Balance</a>
+                </div>
+                <div>
+                    <a href="/">0.09 ETH</a>
+                    <a href="/"><i class="fas fa-angle-down"></i></a>
+                </div>
+            </div>
+            <div class="icons-user">
+                <a href="/"><i class="fas fa-chart-line"></i>   </a>
+                <a href="/"><i class="fas fa-cloud-upload-alt"></i></a>
+                <a href="/"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main-video__section">
+            <div class="main-video__container">
+                <video class="main-video">
+                    <source src="../src/assets/videos/this-aint-techno.mp4"/>
+                </video>
+            </div>
+            <div class="video-info__container">
+                <div class="info-img-author__container">
+                    <img src="../src/assets/images/img-author.jpg" alt="Author's image">
+                </div>
+                <div class="info-video">
+                    <div class="info-video--main">
+                        <h1>David Guetta & Tom Staar - This Ain't Techno (Official Music Video)</h1>
+                    </div>
+                    <div class="info-video--secondary">
+                        <p>by Spinnin' Records <i></i></p>
+                        <p>31,727,857 views</p>
+                        <p>27 mar. 2019</p>
+                        <button>Suscribe - 12M</button>
+                    </div>
+                </div>
+            </div>
+            <div class="video-description__container">
+                <div class="info-description">
+                    <p>Following his recent worldwide hit 'Better When You're Gone', superstar DJ/producer David Guetta returns to the clubs, collaborating with one of the consensus best producers in house music Tom Staar; 'This Ain't Techno'.</p>
+                    <div class="info-icons">
+                        <i class="fas fa-thumbs-up"></i><p>13K</p>
+                        <i class="fas fa-thumbs-down"></i><p>1,163</p>
+                        <i class="fas fa-share"></i><p>Share</p>
+                        <a href="/">...</a>
+                    </div>
+                </div>
+                <div class="info-social-media">
+                    <i class="flaticon-019-spotify"></i>
+                    <i class="fab fa-itunes"></i>
+                    <i class="flaticon-013-twitter-1"></i>
+                    <i class="flaticon-034-instagram"></i>
+                    <i class="flaticon-045-facebook"></i>
+                    <a>Show More <i class="fas fa-angle-down"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="up-next__section">
+            <div class="up-next__container">
+                <h2>Up Next</h2>
+                <p>Autoplay</p>
+                <input type="checkbox" id="switch" />
+                <label for="switch">Toggle</label>
+            </div>
+            <div class="up-next-videos__container">
+                <div class="up-next-video-card">
+                    <img src="../src/assets/images/video-card-1.jpg" alt="Up next video thumbnail ">
+                    <h3>Armin van Buuren - Blah Blah Blah (Official Lyric Video)</h3>
+                    <div class="video-info">
+                        <img src="../src/assets/images/img-author-2.jpg" alt="Author's image">
+                        <a href="/">Armin van Buuren</a><i class="fas fa-check-circle"></i>
+                        <p>536M</p>
+                    </div>
+                </div>
+                <div class="up-next-video-card">
+                    <img src="../src/assets/images/video-card-2.jpg" alt="Up next video thumbnail ">
+                    <h3>Skrillex, Boys Noize, Ty Dolla $ign - Midnight Hour [Official Audio]</h3>
+                    <div class="video-info">
+                        <img src="../src/assets/images/img-author-3.jpg" alt="Author's image">
+                        <a href="/">Skrillex</a><i class="fas fa-check-circle"></i>
+                        <p>5.2M</p>
+                    </div>
+                </div>
+                <div class="up-next-video-card">
+                    <img src="../src/assets/images/video-card-3.jpg" alt="Up next video thumbnail ">
+                    <h3>Martin Garrix feat. Khalid - Ocean (Official Video)</h3>
+                    <div class="video-info">
+                        <img src="../src/assets/images/img-author-4.jpg" alt="Author's image">
+                        <a href="/">Martin Garrix</a><i class="fas fa-check-circle"></i>
+                        <p>278M</p>
+                    </div>
+                </div>
+                <div class="up-next-video-card">
+                    <img src="../src/assets/images/video-card-4.jpg" alt="Up next video thumbnail ">
+                    <h3>Calvin Harris, Sam Smith - Promises (Official Video)</h3>
+                    <div class="video-info">
+                        <img src="../src/assets/images/img-author-5.jpg" alt="Author's image">
+                        <a href="/">Calvin Harris</a><i class="fas fa-check-circle"></i>
+                        <p>192M</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../src/utils/responsiveNav.js"></script>
+</body>
+</html>
