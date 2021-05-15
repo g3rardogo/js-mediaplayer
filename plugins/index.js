@@ -1,4 +1,5 @@
 import MediaPlayer from './mediaPlayer.js';
+import AutoPause from './AutoPause.js';
 
 function getElement(id) {
     return document.querySelector(id);
@@ -19,6 +20,7 @@ const soundBar = getElement('.slider-volume');
 
 const player = new MediaPlayer({
     el: video,
+    plugins: [new AutoPause(btnStateIcon)],
 });
 
 //Pause and play
