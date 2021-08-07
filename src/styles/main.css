@@ -324,9 +324,67 @@ input.slider-volume {
     color: grey;
 }
 
+.comments__section {
+    width: 100%;
+    margin-top: 42px;
+    padding: 0px 16px;
+}
+
+.comments__container {
+    margin-top: 16px;
+}
+
+.comment__container {
+    display: flex;
+    padding: 8px;
+    margin-bottom: 24px;
+    box-shadow: 0px 1px 2px 1px #dfdfdf;
+}
+
+.comment__container .user-image {
+    margin-right: 12px;
+}
+
+.comment__container .user-image i {
+    font-size: 2.8rem;
+}
+
+.comment__container .comment-info {
+    width: 100%;
+}
+
+.comment__container .comment-info .user-name{
+    display: inline-block;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+.comment__container .comment-info span {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.comment__container .comment-info .comment{
+    margin-bottom: 14px;
+}
+
+.comment__container .comment-info .buttons{
+    display: flex;
+}
+
+.comment__container .comment-info .buttons i {
+    margin-right: 8px;
+}
+
+.comment__container .comment-info .buttons p {
+    margin-right: 16px;
+}
+
 .up-next__section {
     width: 100%;
     padding: 0px 16px;
+    margin-top: 42px;
 }
 input[type=checkbox] {
     height: 0;
@@ -481,7 +539,7 @@ label {
     }
 
     .main-video__section {
-        width: 75%;
+        width: 100%;
     }
 
     .info-video--secondary p:not(:nth-child(1)) {
@@ -490,6 +548,7 @@ label {
     }
 
     .up-next__section {
+        margin-top: 0;
         width: 25%;
     }
 
@@ -530,7 +589,8 @@ label {
 
 @media (min-width: 552px) and (max-width: 768px) {
     .up-next-videos__container {
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .up-next-video-card {

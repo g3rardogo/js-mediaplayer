@@ -43,96 +43,211 @@
       </nav>
     </header>
     <main>
-      <section class="main-video__section">
-        <div class="main-video__container">
-          <video class="main-video">
-            <source src="../src/assets/videos/push.mp4" />
-          </video>
-          <div class="controls">
-            <button class="play-pause"><i class="fas fa-play"></i></button>
-            <span id="time-played">00:00</span>
-            <div class="video-bars">
+      <div>
+        <section class="main-video__section">
+          <div class="main-video__container">
+            <video class="main-video">
+              <source src="../src/assets/videos/push.mp4" />
+            </video>
+            <div class="controls">
+              <button class="play-pause"><i class="fas fa-play"></i></button>
+              <span id="time-played">00:00</span>
+              <div class="video-bars">
+                <input
+                  type="range"
+                  id="barSeeker"
+                  class="bar-seeker"
+                  value="0"
+                  min="0"
+                  max="100"
+                  step="0.1"
+                />
+                <progress
+                  value="0"
+                  max="100"
+                  step="0.1"
+                  id="barProgress"
+                  class="bar-progress"
+                ></progress>
+              </div>
+              <span id="time-duration">00:00</span>
+              <button id="btnSound" class="btn-sound">
+                <i class="fas fa-volume-up"></i>
+              </button>
               <input
                 type="range"
-                id="barSeeker"
-                class="bar-seeker"
-                value="0"
+                id="sliderVolume"
+                class="slider-volume"
+                value="10"
                 min="0"
-                max="100"
-                step="0.1"
+                max="10"
               />
-              <progress
-                value="0"
-                max="100"
-                step="0.1"
-                id="barProgress"
-                class="bar-progress"
-              ></progress>
-            </div>
-            <span id="time-duration">00:00</span>
-            <button id="btnSound" class="btn-sound">
-              <i class="fas fa-volume-up"></i>
-            </button>
-            <input
-              type="range"
-              id="sliderVolume"
-              class="slider-volume"
-              value="10"
-              min="0"
-              max="10"
-            />
-          </div>
-        </div>
-        <div class="video-info__container">
-          <div class="info-img-author__container">
-            <img
-              src="../src/assets/images/img-author-1.jpg"
-              alt="Author's image"
-            />
-          </div>
-          <div class="info-video">
-            <div class="info-video--main">
-              <h2>
-                David Guetta & Tom Staar - This Ain't Techno (Official Music
-                Video)
-              </h2>
-            </div>
-            <div class="info-video--secondary">
-              <p>by Spinnin' Records <i></i></p>
-              <p>31,727,857 views</p>
-              <p>27 mar. 2019</p>
-              <button>Suscribe - 12M</button>
             </div>
           </div>
-        </div>
-        <div class="video-description__container">
-          <div class="info-description">
-            <p>
-              Following his recent worldwide hit 'Better When You're Gone',
-              superstar DJ/producer David Guetta returns to the clubs,
-              collaborating with one of the consensus best producers in house
-              music Tom Staar; 'This Ain't Techno'.
-            </p>
-            <div class="info-icons">
-              <i class="fas fa-thumbs-up"></i>
-              <p>13K</p>
-              <i class="fas fa-thumbs-down"></i>
-              <p>1,163</p>
-              <i class="fas fa-share"></i>
-              <p>Share</p>
-              <a href="#">...</a>
+          <div class="video-info__container">
+            <div class="info-img-author__container">
+              <img
+                src="../src/assets/images/img-author-1.jpg"
+                alt="Author's image"
+              />
+            </div>
+            <div class="info-video">
+              <div class="info-video--main">
+                <h2>
+                  Steff Da Campo & musicbyLukas – Push (Official Music Video)
+                </h2>
+              </div>
+              <div class="info-video--secondary">
+                <p>by Spinnin' Records <i></i></p>
+                <p>591,030 views</p>
+                <p>28 sep. 2019</p>
+                <button>Suscribe - 28M</button>
+              </div>
             </div>
           </div>
-          <div class="info-social-media">
-            <i class="flaticon-019-spotify"></i>
-            <i class="fab fa-itunes"></i>
-            <i class="flaticon-013-twitter-1"></i>
-            <i class="flaticon-034-instagram"></i>
-            <i class="flaticon-045-facebook"></i>
-            <a>Show More <i class="fas fa-angle-down"></i></a>
+          <div class="video-description__container">
+            <div class="info-description">
+              <p>
+                Steff Da Campo & musicbyLukas – Push is OUT NOW on AFTR:HRS!
+                Like this track? Download on Beatport or add it to your
+                favourite Spotify/Apple Music playlist.
+              </p>
+              <div class="info-icons">
+                <i class="fas fa-thumbs-up"></i>
+                <p>13K</p>
+                <i class="fas fa-thumbs-down"></i>
+                <p>1,163</p>
+                <i class="fas fa-share"></i>
+                <p>Share</p>
+                <a href="#">...</a>
+              </div>
+            </div>
+            <div class="info-social-media">
+              <i class="flaticon-019-spotify"></i>
+              <i class="fab fa-itunes"></i>
+              <i class="flaticon-013-twitter-1"></i>
+              <i class="flaticon-034-instagram"></i>
+              <i class="flaticon-045-facebook"></i>
+              <a>Show More <i class="fas fa-angle-down"></i></a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="comments__section">
+          <div>
+            <h2>6 Comments</h2>
+          </div>
+          <div class="comments__container">
+            <article class="comment__container">
+              <div class="user-image">
+                <i class="fa fa-user-circle"></i>
+              </div>
+              <div class="comment-info">
+                <p class="user-name">Gerardo Ramirez</p>
+                <span>4 hours ago</span>
+                <p class="comment">Nice track boys!</p>
+                <div class="buttons">
+                  <i class="fas fa-thumbs-up"></i>
+                  <p>2</p>
+                  <i class="fas fa-thumbs-down"></i>
+                  <p>0</p>
+                  <p class="respond">REPLY</p>
+                </div>
+              </div>
+            </article>
+            <article class="comment__container">
+              <div class="user-image">
+                <i class="fa fa-user-circle"></i>
+              </div>
+              <div class="comment-info">
+                <p class="user-name">Alex Destefano</p>
+                <span>9 hours ago</span>
+                <p class="comment">I love this song !!!! 🔥🔥🔥🔥🔥🔥</p>
+                <div class="buttons">
+                  <i class="fas fa-thumbs-up"></i>
+                  <p>4</p>
+                  <i class="fas fa-thumbs-down"></i>
+                  <p>0</p>
+                  <p class="respond">REPLY</p>
+                </div>
+              </div>
+            </article>
+            <article class="comment__container">
+              <div class="user-image">
+                <i class="fa fa-user-circle"></i>
+              </div>
+              <div class="comment-info">
+                <p class="user-name">Zack Merci</p>
+                <span>1 year ago</span>
+                <p class="comment">
+                  Lucas have come soo far.. From submiting track to Talent Pool
+                  to having a offical release and Video release on Spinnin..
+                </p>
+                <div class="buttons">
+                  <i class="fas fa-thumbs-up"></i>
+                  <p>10</p>
+                  <i class="fas fa-thumbs-down"></i>
+                  <p>0</p>
+                  <p class="respond">REPLY</p>
+                </div>
+              </div>
+            </article>
+            <article class="comment__container">
+              <div class="user-image">
+                <i class="fa fa-user-circle"></i>
+              </div>
+              <div class="comment-info">
+                <p class="user-name">Maria Cristina</p>
+                <span>1 year ago</span>
+                <p class="comment">
+                  It's incredible to see Lukas collabing with such an up there
+                  Producer
+                </p>
+                <div class="buttons">
+                  <i class="fas fa-thumbs-up"></i>
+                  <p>5</p>
+                  <i class="fas fa-thumbs-down"></i>
+                  <p>1</p>
+                  <p class="respond">REPLY</p>
+                </div>
+              </div>
+            </article>
+            <article class="comment__container">
+              <div class="user-image">
+                <i class="fa fa-user-circle"></i>
+              </div>
+              <div class="comment-info">
+                <p class="user-name">Deniz</p>
+                <span>1 month ago</span>
+                <p class="comment">Vocals and drop fit together perfectly</p>
+                <div class="buttons">
+                  <i class="fas fa-thumbs-up"></i>
+                  <p>0</p>
+                  <i class="fas fa-thumbs-down"></i>
+                  <p>0</p>
+                  <p class="respond">REPLY</p>
+                </div>
+              </div>
+            </article>
+            <article class="comment__container">
+              <div class="user-image">
+                <i class="fa fa-user-circle"></i>
+              </div>
+              <div class="comment-info">
+                <p class="user-name">Caro Lina</p>
+                <span>1 year ago</span>
+                <p class="comment">It's magic 💗</p>
+                <div class="buttons">
+                  <i class="fas fa-thumbs-up"></i>
+                  <p>0</p>
+                  <i class="fas fa-thumbs-down"></i>
+                  <p>0</p>
+                  <p class="respond">REPLY</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
       <section class="up-next__section">
         <div class="up-next__container">
           <h2>Up Next</h2>
