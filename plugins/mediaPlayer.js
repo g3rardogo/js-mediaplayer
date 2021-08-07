@@ -18,6 +18,7 @@ var readableTime = function(t) {
 
 mediaPlayer.prototype.play = function() {
     this.media.play();
+    this.media.volume = 0.1
 }
 
 mediaPlayer.prototype.pause = function() {

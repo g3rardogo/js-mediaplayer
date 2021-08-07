@@ -23,6 +23,8 @@ const player = new MediaPlayer({
     plugins: [new AutoPause(btnStateIcon)],
 });
 
+video.volume = 0.1
+
 //Pause and play
 btnState.onclick = () => player.togglePlay(btnStateIcon);
 video.onclick = () => player.togglePlay(btnStateIcon);

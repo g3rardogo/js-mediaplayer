@@ -1,6 +1,6 @@
 class AutoPause {
     constructor(btnStateIcon) {
-    this.btnStateIcon = btnStateIcon;
+      this.btnStateIcon = btnStateIcon;
       this.threshold = 0.25;
       this.handleIntersection = this.handleIntersection.bind(this);
       this.handleVisibilityChange = this.handleVisibilityChange.bind(this);
@@ -13,7 +13,7 @@ class AutoPause {
             threshold: this.threshold,
         });
 
-        observer.observe(this.player.media);
+        observer.observe(player.media);
 
         document.addEventListener('visibilitychange', this.handleVisibilityChange);
     }
