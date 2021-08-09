@@ -1,29 +1,30 @@
-import MediaPlayer from './mediaPlayer.js';
-import AutoPause from './AutoPause.js';
+import MediaPlayer from "./mediaPlayer.js";
+import AutoPause from "./AutoPause.js";
 
 function getElement(id) {
-    return document.querySelector(id);
+  return document.querySelector(id);
 }
 
-const video = getElement('.main-video');
+const video = getElement(".main-video");
 
-const btnState = getElement('.play-pause');
-const btnSound = getElement('.btn-sound');
-const btnStateIcon = getElement('.fa-play')
-const btnSoundIcon = getElement('.fa-volume-up')
+const btnState = getElement(".play-pause");
+const btnSound = getElement(".btn-sound");
+const btnStateIcon = getElement(".fa-play");
+const btnSoundIcon = getElement(".fa-volume-up");
 
-const timePlayed = getElement('#time-played');
-const timeDuration = getElement('#time-duration');
+const timePlayed = getElement("#time-played");
+const timeDuration = getElement("#time-duration");
 
-const barProgress = getElement('.bar-progress');
-const soundBar = getElement('.slider-volume');
+const barProgress = getElement(".bar-progress");
+const soundBar = getElement(".slider-volume");
 
 const player = new MediaPlayer({
-    el: video,
-    plugins: [new AutoPause(btnStateIcon)],
+  el: video,
+  plugins: [new AutoPause(btnStateIcon)],
 });
 
-video.volume = 0.1
+video.volume = 0.2;
+btnSound.firstElementChild.className = "fas fa-volume-down";
 
 //Pause and play
 btnState.onclick = () => player.togglePlay(btnStateIcon);
@@ -33,13 +34,13 @@ video.onclick = () => player.togglePlay(btnStateIcon);
 video.onloadeddata = () => player.showDuration(timeDuration);
 
 //Current time video
-video.addEventListener('timeupdate', () => {
-    player.showCurrentTime(barSeeker, barProgress, timePlayed)
+video.addEventListener("timeupdate", () => {
+  player.showCurrentTime(barSeeker, barProgress, timePlayed);
 });
 
 //Allow click on seeker to change video position
 barSeeker.addEventListener("change", () => {
-    player.changeTimeWithSeeker(barSeeker);
+  player.changeTimeWithSeeker(barSeeker);
 });
 
 //Mute and unmute
@@ -47,5 +48,5 @@ btnSound.onclick = () => player.toggleSound(btnSoundIcon, soundBar);
 
 //Volume bar
 soundBar.addEventListener("change", () => {
-    player.changeVolumeWithBar(soundBar, btnSound);
+  player.changeVolumeWithBar(soundBar, btnSound);
 });
