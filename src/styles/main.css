@@ -46,16 +46,6 @@ p {
     font-size: 1.8rem;
 }
 
-.nav-main a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.nav-main a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
 .nav-main .icon {
     display: none;
 }
