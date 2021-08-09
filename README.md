@@ -1,9 +1,10 @@
-# JS
+# JS Media Player 🎵
 
-- Overview
-- Wakatime
+Media Player built with Vanilla JavaScript.
 
--Screenshot
+[![wakatime](https://wakatime.com/badge/github/g3rardogo/js-mediaplayer.svg)](https://wakatime.com/badge/github/g3rardogo/js-mediaplayer)
+
+![](./screenshot.png)
 
 ## Table of contents 📑
 
@@ -27,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- 📌 Live Site URL: [here](https://your-live-site-url.com)
+- 📌 Live Site URL: [here](https://g3rardogo.github.io/js-mediaplayer/public/index.html)
 
 ## My process 👨‍💻
 
@@ -38,18 +39,12 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
 ## Author 🐱‍👤
 
-- Website - [Add your name here](https://www.your-site.com)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - https://gerardoramirez.netlify.app/
+- Twitter - [@g3rardogo](https://www.twitter.com/g3rardogo)

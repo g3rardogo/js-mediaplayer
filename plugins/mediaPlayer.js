@@ -78,8 +78,10 @@ mediaPlayer.prototype.changeTimeWithSeeker = function (barSeeker) {
 };
 
 mediaPlayer.prototype.changeVolumeWithBar = function (soundBar, btnSound) {
+  console.log(soundBar.value);
   const theVolume = soundBar.value / 10;
   this.media.volume = theVolume;
+  console.log(this.media.volume);
 
   if (theVolume === 0) {
     btnSound.firstElementChild.className = "fas fa-volume-mute";

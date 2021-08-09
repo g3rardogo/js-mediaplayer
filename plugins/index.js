@@ -23,8 +23,8 @@ const player = new MediaPlayer({
   plugins: [new AutoPause(btnStateIcon)],
 });
 
-video.volume = 0.2;
-btnSound.firstElementChild.className = "fas fa-volume-down";
+video.volume = 0;
+btnSound.firstElementChild.className = "fas fa-volume-mute";
 
 //Pause and play
 btnState.onclick = () => player.togglePlay(btnStateIcon);
@@ -47,6 +47,6 @@ barSeeker.addEventListener("change", () => {
 btnSound.onclick = () => player.toggleSound(btnSoundIcon, soundBar);
 
 //Volume bar
-soundBar.addEventListener("change", () => {
+soundBar.addEventListener("mousemove", () => {
   player.changeVolumeWithBar(soundBar, btnSound);
 });
