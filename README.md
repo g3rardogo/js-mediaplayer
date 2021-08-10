@@ -51,11 +51,11 @@ This was an entertaining project, I made use of different web APIs such a Inters
 
 ### Useful resources
 
-- [All you need to know about Prototypal Inheritance](https://link.medium.com/Y4OmYtyrCib) - This is an important pillar of JavaScript that you must understand.
+- [All you need to know about Prototypal Inheritance](https://link.medium.com/Y4OmYtyrCib) - This is an important pillar of JavaScript that you must understand. 🐱‍💻
 
-- [JavaScript bind() Method](https://www.javascripttutorial.net/javascript-bind/) - Lear how to use JavaScript bind() method effectively.
+- [JavaScript bind() Method](https://www.javascripttutorial.net/javascript-bind/) - Lear how to use JavaScript bind() method effectively. 🎯
 
-- [How to use Intersection Observers in a Website](https://www.section.io/engineering-education/intersection-observer-api/) - Powerful browser API.
+- [How to use Intersection Observers in a Website](https://www.section.io/engineering-education/intersection-observer-api/) - Powerful browser API. 👀
 
 ## Author 🐱‍👤
 
