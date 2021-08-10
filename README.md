@@ -21,10 +21,14 @@ Media Player built with Vanilla JavaScript.
 
 ### The project
 
-Users should be able to:
+The media player has plugins that allows users to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+- Change current video time with the progress bar.
+- Change volume with the sound bar.
+- Show video total duration.
+- Play/pause the video by clicking the state button or directly the video.
+- Auto pause the video when is not visible in the viewport.
+- Auto pause the video when the user is not in the media player tab.
 
 ### Links
 
@@ -34,15 +38,24 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
+- Semantic HTML5 markup.
+- CSS custom properties.
+- Flexbox.
+- CSS Grid.
+- Mobile-first workflow.
+- JavaScript.
 
 ### What I learned
 
+This was an entertaining project, I made use of different web APIs such a Intersection Observer, Document and HTMLMediaElement. I improved my skills with Vanilla JavaScript using Prototype Inheritance.
+
 ### Useful resources
+
+- [All you need to know about Prototypal Inheritance](https://link.medium.com/Y4OmYtyrCib) - This is an important pillar of JavaScript that you must understand.
+
+- [JavaScript bind() Method](https://www.javascripttutorial.net/javascript-bind/) - Lear how to use JavaScript bind() method effectively.
+
+- [How to use Intersection Observers in a Website](https://www.section.io/engineering-education/intersection-observer-api/) - Powerful browser API.
 
 ## Author 🐱‍👤
 
